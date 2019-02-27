@@ -1,8 +1,8 @@
 ## Git commands
 
-#### Created by initialisation with git:
+#### Repository created by initialisation with git:
 
-    cd ~/.vim
+    cd folder-with-files-to-put-in-repository
     git init
     touch README
     git add .
