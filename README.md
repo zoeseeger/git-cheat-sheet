@@ -2,11 +2,11 @@
 
 #### Create a repository
 
-Create a new repository on your GitHub account. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. 
+Create a new repository on your GitHub account. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. Remember the name of your repository.
 
 Move to folder where the repository will be stored with files that will be uploaded.
 
-    cd folder-with-files-to-put-in-repository
+    cd foldername
     
 Initialise a git repository. This will create a .git folder in the current directory where all of the information about this repository will be stored.
 
@@ -23,6 +23,8 @@ Add everything in current directory and subdirectories to the repository.
 'commit' will find changes between last version of the repository and the current one and track these changes. The commit is saved with a comment given by the editor that breifly explains what the changes are.
 
     git commit -m "Initial commit"
+    
+    git remote add origin https://github.com/account/name-of-your-repository.git
     
 'push' uploads all of the changes stored from the 'commit' command to the github site where it is stored and changes are tracked. The main 'branch' of the project is called the master. When different people work on code at the same time they can generate different branches that can later be merged back to the master branch or rejected if they do not work well with the rest of the changed code.
 
