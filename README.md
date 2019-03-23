@@ -16,17 +16,25 @@ Create the file README where the information about the files to the user can be 
 
     touch README
     
-Add everything in current directory and subdirectories to the repository or you can choose to add the files one at a time.
+Add everything in current directory and subdirectories to the repository:
 
     git add .
+    
+OR you can choose to add specific files:
+
+    git add filename
     
 'commit' will find changes between last version of the repository and the current one and track these changes. The commit is saved with a comment given by the editor that breifly explains what the changes are.
 
     git commit -m "Initial commit"
  
-To add your files to the repository created at the start specify the repository by the following command after inserting the correct username and name of the repository.
+To add your files to the repository created at the start specify the repository by the following command after inserting the correct username and name of the repository. This updates the URL in .git/config.
  
     git remote add origin https://github.com/account/name-of-your-repository.git
+    
+Alternatively, if your host is blocking access to the URL during the push process insead change the URL to:
+
+    git remote add origin https://account@github.com/account/name-of-your-repository.git
     
 'push' uploads all of the changes stored from the 'commit' command to the github site where it is stored and changes are tracked. The main 'branch' of the project is called the master. When different people work on code at the same time they can generate different branches that can later be merged back to the master branch or rejected if they do not work well with the rest of the changed code.
 
