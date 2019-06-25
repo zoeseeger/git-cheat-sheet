@@ -90,4 +90,26 @@ Clones repository to specified path and adds .gitmodules in root of repository.
     
     git submodule init 
     git submodule update
+    
+#### Find differences between local and github
+
+Suppose you've got a remote called origin that refers to your GitHub repository, you would do:
+
+    git fetch origin
+    git diff master origin/master
+    
+You can then merge with branch master by:
+
+    git merge origin/master
+    
+#### Revert to last github commit
+
+After you have found differences between the local and github repository, if you want to revert local changes to the github repository do:
+
+    git reset --hard
+    
+### Pull last commit of one file
+
+    git checkout file
+    
 
