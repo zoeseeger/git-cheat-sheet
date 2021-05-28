@@ -36,9 +36,9 @@ Alternatively, if your host is blocking access to the URL during the push proces
 
     git remote add origin https://account@github.com/account/name-of-your-repository.git
     
-'push' uploads all of the changes stored from the 'commit' command to the github site where it is stored and changes are tracked. The main 'branch' of the project is called the master. When different people work on code at the same time they can generate different branches that can later be merged back to the master branch or rejected if they do not work well with the rest of the changed code.
+'push' uploads all of the changes stored from the 'commit' command to the github site where it is stored and changes are tracked. The main 'branch' of the project is called the main. When different people work on code at the same time they can generate different branches that can later be merged back to the main branch or rejected if they do not work well with the rest of the changed code.
 
-    git push -u origin master
+    git push -u origin main
 
 Branches are a good way to fix bugs in code as they track differences between old and new versions so that if a new version is distributed only the buggy parts of the code need to be changed and the client does not need to redownload or install the whole source material. Git will take care of the changes.
 
@@ -96,11 +96,11 @@ Clones repository to specified path and adds .gitmodules in root of repository.
 Suppose you've got a remote called origin that refers to your GitHub repository, you would do:
 
     git fetch origin
-    git diff master origin/master
+    git diff main origin/main
     
-You can then merge with branch master by:
+You can then merge with branch main by:
 
-    git merge origin/master
+    git merge origin/main
     
 #### Revert to last github commit
 
