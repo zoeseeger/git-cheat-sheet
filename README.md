@@ -1,16 +1,16 @@
 ## Git commands
 
-#### Configure git for current user
+### Configure git for current user
 
 git config --global user.name "username"
 git config --global user.email "email@email"
 
-#### Check the config settings
+### Check the config settings
 
 git config --global user.name
 git config --global user.email
 
-#### Create a repository
+### Create a repository
 
 Create a new repository on your GitHub account. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. Remember the name of your repository.
 
@@ -52,13 +52,13 @@ Alternatively, if your host is blocking access to the URL during the push proces
 
 Branches are a good way to fix bugs in code as they track differences between old and new versions so that if a new version is distributed only the buggy parts of the code need to be changed and the client does not need to redownload or install the whole source material. Git will take care of the changes.
 
-#### Updating repository on git
+### Updating repository on git
 
     git add .
     git commit -m <Comment on changes made>
     git push
     
-#### Remove files from a repository
+### Remove files from a repository
     
 Remove all files that we have previously added from our stored information:
     
@@ -74,7 +74,7 @@ If we have cleared all files from the repository we will have to add the remaini
     git commit -m <Comment on changes made>
     git push
     
-#### Check changes between local and remote repositories
+### Check changes between local and remote repositories
 
 Get all information from remote host:
 
@@ -84,11 +84,11 @@ Check remote host files again current repository:
     
     git log -p HEAD..FETCH_HEAD
 
-#### Updating local repository from git
+### Updating local repository from git
 
     git pull
 
-#### Add submodule to git repository
+### Add submodule to git repository
 
 Clones repository to specified path and adds .gitmodules in root of repository.
 
@@ -96,12 +96,12 @@ Clones repository to specified path and adds .gitmodules in root of repository.
     git add . 
     git commit -m <Comment on update>
 
-#### Synchronise all submodules
+### Synchronise all submodules
     
     git submodule init 
     git submodule update
     
-#### Find differences between local and github
+### Find differences between local and github
 
 Suppose you've got a remote called origin that refers to your GitHub repository, you would do:
 
@@ -112,7 +112,7 @@ You can then merge with branch main by:
 
     git merge origin/main
     
-#### Revert to last github commit
+### Revert to last github commit
 
 After you have found differences between the local and github repository, if you want to revert local changes to the github repository do:
 
