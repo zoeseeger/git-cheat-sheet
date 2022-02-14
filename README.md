@@ -1,5 +1,15 @@
 ## Git commands
 
+#### Configure git for current user
+
+git config --global user.name "username"
+git config --global user.email "email@email"
+
+#### Check the config settings
+
+git config --global user.name
+git config --global user.email
+
 #### Create a repository
 
 Create a new repository on your GitHub account. To avoid errors, do not initialize the new repository with README, license, or gitignore files. You can add these files after your project has been pushed to GitHub. Remember the name of your repository.
