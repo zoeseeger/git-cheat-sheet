@@ -80,17 +80,17 @@ If we have cleared all files from the repository we will have to add the remaini
     
 ### Check changes between local and remote repositories
 
-Get all information from remote host:
+Get all information from remote host and bring in most recent files from repository. This can incorporate new remote changes to a file without losing local changes:
 
     git fetch
-    
+
+To sync files with the repository use pull:
+
+    git pull
+
 Check remote host files again current repository:
     
     git log -p HEAD..FETCH_HEAD
-
-### Updating local repository from git
-
-    git pull
     
 ### Creating a new branch
 
