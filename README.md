@@ -38,7 +38,7 @@ OR you can choose to add specific files:
 
     git commit -m "Initial commit"
  
-To add your files to the repository created at the start specify the repository by the following command after inserting the correct username and name of the repository. This updates the URL in .git/config.
+To add your files to the remote repository created at the start specify the repository by the following command after inserting the correct username and name of the repository. This updates the URL in .git/config.
  
     git remote add origin https://github.com/account/name-of-your-repository.git
     
@@ -46,7 +46,7 @@ Alternatively, if your host is blocking access to the URL during the push proces
 
     git remote add origin https://account@github.com/account/name-of-your-repository.git
     
-'push' uploads all of the changes stored from the 'commit' command to the github site where it is stored and changes are tracked. The main 'branch' of the project is called the main. When different people work on code at the same time they can generate different branches that can later be merged back to the main branch or rejected if they do not work well with the rest of the changed code.
+'push' uploads all of the local changes stored from the 'commit' command to the remote github site where it is stored and changes are tracked. The main 'branch' of the project is called main. When different people work on code at the same time they can generate different branches that can later be merged back to the main branch or rejected if they do not work well with the rest of the changed code.
 
     git push -u origin main
 
@@ -134,8 +134,10 @@ After you have found differences between the local and github repository, if you
 
     git reset --hard
     
-### Pull last commit of one file
+### Get last commit of one file
 
     git checkout file
     
+### Pull requests
 
+Pull requests are for sharing proposed changes, receiving feedback and iterating on proposed changes. It is encouraged to perform pull requests early on in the process when changes are still being made in order to attract early feedback. Pull requests are performed on github and before a branch in merged back to main.
