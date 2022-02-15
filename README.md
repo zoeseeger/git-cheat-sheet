@@ -138,6 +138,19 @@ After you have found differences between the local and github repository, if you
 
     git checkout file
     
-### Pull requests
+### Pull requests and merging
 
 Pull requests are for sharing proposed changes, receiving feedback and iterating on proposed changes. It is encouraged to perform pull requests early on in the process when changes are still being made in order to attract early feedback. Pull requests are performed on github and before a branch in merged back to main.
+
+Checkout into the branch that you want to merge your other branch into (often main):
+
+    git checkout <branch-to-merge-into>
+   
+Merge your other branch and push changes to remote:
+    
+    git merge <branch-to-merge>
+    git push
+    
+Delete redundant branch: 
+
+    git branch -d <merged-branch>
