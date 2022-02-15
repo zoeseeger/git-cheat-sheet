@@ -9,10 +9,6 @@
 
     git config --global user.name
     git config --global user.email
-    
-### Check status of current branch
-
-    git status
 
 ### Create a repository
 
@@ -78,6 +74,10 @@ If we have cleared all files from the repository we will have to add the remaini
     git commit -m <Comment on changes made>
     git push
     
+### Check status of current branch
+
+    git status
+    
 ### Check changes between local and remote repositories
 
 Get all information from remote host:
@@ -95,9 +95,13 @@ Check remote host files again current repository:
 ### Creating a new branch
 
     git branch new-branch
+    
 and add to git remote repository 'upstream'
+
     git push --set-upstream origin new-branch
+    
 and checkout branch
+
     git checkout new-branch
 
 ### Add submodule to git repository
