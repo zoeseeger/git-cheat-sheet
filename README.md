@@ -2,13 +2,17 @@
 
 ### Configure git for current user
 
-git config --global user.name "username"
-git config --global user.email "email@email"
+    git config --global user.name "username"
+    git config --global user.email "email@email"
 
 ### Check the config settings
 
-git config --global user.name
-git config --global user.email
+    git config --global user.name
+    git config --global user.email
+    
+### Check status of current branch
+
+    git status
 
 ### Create a repository
 
@@ -87,6 +91,14 @@ Check remote host files again current repository:
 ### Updating local repository from git
 
     git pull
+    
+### Creating a new branch
+
+    git branch new-branch
+and add to git remote repository 'upstream'
+    git push --set-upstream origin new-branch
+and checkout branch
+    git checkout new-branch
 
 ### Add submodule to git repository
 
