@@ -151,6 +151,6 @@ Merge your other branch and push changes to remote:
     git merge <branch-to-merge>
     git push
     
-Delete redundant branch: 
+Delete redundant local branch: 
 
     git branch -d <merged-branch>
