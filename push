@@ -1,0 +1,27 @@
+#!/bin/zsh
+
+# Check for a commit message
+if [ -z "$1" ]; then
+  echo "❌ Please provide a commit message."
+  echo "Usage: ./gacp.zsh \"Your commit message here\""
+  exit 1
+fi
+
+# Add all changes
+git add .
+
+# Commit with message
+git commit -m "$1" || {
+  echo "⚠️ Commit failed. Possibly no changes to commit."
+  exit 1
+}
+
+
+# Push to the current branch
+echo "🚀 Pushing to remote..."
+if git push; then
+  echo "✅ Changes committed and pushed!"
+else
+  echo "❌ Push failed. Please check your remote or network."
+  exit 1
+fi
