@@ -3,7 +3,7 @@
 # Check for a commit message
 if [ -z "$1" ]; then
   echo "❌ Please provide a commit message."
-  echo "Usage: ./gacp.zsh \"Your commit message here\""
+  echo "Usage: push \"Your commit message here\""
   exit 1
 fi
 
